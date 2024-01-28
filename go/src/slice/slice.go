@@ -16,6 +16,7 @@ func main() {
 
 }
 
+// 如果方案是对切片做读写，并想要生效返回，必须有slice返回值，否则在调用处无效
 func slice(a []int) {
 	for i := 0; i < 10; i++ {
 		a = append(a, i)
