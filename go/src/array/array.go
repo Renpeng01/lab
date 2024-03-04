@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var arr [10]int // 声明数组
+	var arr [10]int // 声明数组  arr3 := [...]int{1, 2, 3}
 
 	for i, v := range arr {
 		fmt.Println("i: ", i, " v: ", v)
