@@ -34,7 +34,7 @@ func main() {
 		fmt.Println("wait11111")
 	}()
 
-	// 不可以多次wait
+	// 可以多次wait
 	go func() {
 		wg.Wait()
 		fmt.Println("wait222")
