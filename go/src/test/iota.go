@@ -12,5 +12,5 @@ const (
 )
 
 func main() {
-	fmt.Println("mutexLocked: ", mutexLocked, " mutexWoken: ", mutexWoken)
+	fmt.Println("mutexWaiterShift: ", mutexWaiterShift)
 }
