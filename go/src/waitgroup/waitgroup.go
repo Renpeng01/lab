@@ -29,17 +29,9 @@ func main() {
 		}(v)
 	}
 
-	go func() {
-		wg.Wait()
-		fmt.Println("wait11111")
-	}()
+	// 可以多次判断wait
+	wg.Wait()
+	wg.Wait()
 
-	// 可以多次wait
-	go func() {
-		wg.Wait()
-		fmt.Println("wait222")
-	}()
-
-	s := make(chan struct{})
-	<-s
+	fmt.Println("111111")
 }
